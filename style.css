@@ -1,0 +1,307 @@
+/* Reset and Body */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #0a0f23;
+    color: #eaeaea;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #00e6ff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #12193e, #0a0f23);
+    padding: 100px 0;
+    text-align: center;
+    color: #00e6ff;
+    position: relative;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    text-shadow: 0 0 15px rgba(0, 230, 255, 0.6);
+    animation: glow 1.5s infinite alternate;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin: 20px 0 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px solid transparent;
+}
+
+.btn.primary {
+    background: #00e6ff;
+    color: #0a0f23;
+}
+
+.btn.secondary {
+    background: transparent;
+    border-color: #00e6ff;
+    color: #00e6ff;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 230, 255, 0.8);
+}
+
+/* Features Section */
+.features-section {
+    background: #0a0f23;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.features-section h2 {
+    font-size: 2.5rem;
+    color: #00e6ff;
+    text-shadow: 0 0 10px rgba(0, 230, 255, 0.8);
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.feature {
+    width: 45%;
+    margin: 20px;
+    background: #12193e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 230, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.feature i {
+    font-size: 2.5rem;
+    color: #00e6ff;
+    margin-bottom: 15px;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #eaeaea;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 230, 255, 0.3);
+}
+
+/* Call to Action */
+.call-to-action-section {
+    background: linear-gradient(135deg, #12193e, #0a0f23);
+    padding: 80px 0;
+    text-align: center;
+    color: #00e6ff;
+}
+
+.call-to-action-section h2 {
+    font-size: 2.5rem;
+    text-shadow: 0 0 10px rgba(0, 230, 255, 0.8);
+}
+
+.call-to-action-section .btn {
+    margin-top: 20px;
+}
+
+/* Footer */
+.footer-section {
+    background: #0a0f23;
+    padding: 50px 0;
+    color: #eaeaea;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.footer-column {
+    width: 22%;
+}
+
+.footer-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #00e6ff;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li a {
+    font-size: 1rem;
+    color: #eaeaea;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #00e6ff;
+}
+
+.social-links a {
+    color: #00e6ff;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-5px);
+    color: #009ec3;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+    border-top: 1px solid #313d5a;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.footer-bottom a {
+    color: #eaeaea;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+    color: #00e6ff;
+}
+
+/* Animations */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px rgba(0, 230, 255, 0.8), 0 0 20px rgba(0, 230, 255, 0.6);
+    }
+    100% {
+        text-shadow: 0 0 20px rgba(0, 230, 255, 0.8), 0 0 40px rgba(0, 230, 255, 0.6);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+.logo {
+    width: 150px; /* Adjust the size as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto 20px; /* Center the logo and add space below it */
+}
+/* How It Works Section */
+.how-it-works-section {
+    background: #0a0f23;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.how-it-works-section h2 {
+    font-size: 2.5rem;
+    color: #00e6ff;
+    text-shadow: 0 0 10px rgba(0, 230, 255, 0.8);
+    margin-bottom: 50px;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.step {
+    flex: 1;
+    margin: 0 20px;
+    background: #12193e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 230, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.step h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #00e6ff;
+}
+
+.step p {
+    font-size: 1.1rem;
+    color: #eaeaea;
+}
+
+.step:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 230, 255, 0.3);
+}
+/* Add animation to the logo */
+.logo {
+    width: 150px; /* Adjust the size as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto 20px; /* Center the logo and add space below it */
+    animation: bounce 2s infinite ease-in-out, glow 1.5s infinite alternate;
+}
+
+/* Keyframes for glowing effect */
+@keyframes glow {
+    0% {
+        filter: drop-shadow(0 0 10px rgba(0, 230, 255, 0.6)) drop-shadow(0 0 20px rgba(0, 230, 255, 0.4));
+    }
+    100% {
+        filter: drop-shadow(0 0 20px rgba(0, 230, 255, 0.8)) drop-shadow(0 0 40px rgba(0, 230, 255, 0.6));
+    }
+}
+
+/* Keyframes for bounce effect */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
