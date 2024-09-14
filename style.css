@@ -10,6 +10,7 @@ body {
     background: #0a0f23;
     color: #eaeaea;
     line-height: 1.6;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -25,103 +26,86 @@ a {
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(135deg, #12193e, #0a0f23);
-    padding: 100px 0;
+    background-image: url("https://www.slimecrew.org/storage/img/bg.png");
+    color: white;
     text-align: center;
-    color: #00e6ff;
+    padding: 50px 0;
     position: relative;
 }
 
 .hero-section h1 {
-    font-size: 3rem;
-    text-shadow: 0 0 15px rgba(0, 230, 255, 0.6);
-    animation: glow 1.5s infinite alternate;
+    font-size: 4rem;
+    margin-bottom: 10px;
 }
 
 .hero-section p {
-    font-size: 1.2rem;
-    margin: 20px 0 30px;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
 }
 
 .btn {
     display: inline-block;
-    padding: 12px 25px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s ease;
     margin: 10px;
     border-radius: 50px;
-    transition: all 0.3s ease;
-    text-transform: uppercase;
-    font-weight: bold;
     border: 2px solid transparent;
 }
 
 .btn.primary {
     background: #00e6ff;
-    color: #0a0f23;
+    color: white;
 }
 
 .btn.secondary {
-    background: transparent;
-    border-color: #00e6ff;
-    color: #00e6ff;
+    background: white;
+    color: #764ba2;
 }
 
 .btn:hover {
+    opacity: 0.8;
     transform: translateY(-5px);
     box-shadow: 0 0 15px rgba(0, 230, 255, 0.8);
 }
 
-/* Features Section */
-.features-section {
-    background: #0a0f23;
-    padding: 80px 0;
-    text-align: center;
+/* Keyframes */
+@keyframes glow {
+    0% {
+        filter: drop-shadow(0 0 10px rgba(0, 230, 255, 0.6)) drop-shadow(0 0 20px rgba(0, 230, 255, 0.4));
+    }
+    100% {
+        filter: drop-shadow(0 0 20px rgba(0, 230, 255, 0.8)) drop-shadow(0 0 40px rgba(0, 230, 255, 0.6));
+    }
 }
 
-.features-section h2 {
-    font-size: 2.5rem;
-    color: #00e6ff;
-    text-shadow: 0 0 10px rgba(0, 230, 255, 0.8);
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
 }
 
-.features {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 50px;
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
-.feature {
-    width: 45%;
-    margin: 20px;
-    background: #12193e;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 230, 255, 0.2);
-    transition: transform 0.3s ease;
+/* Logo Animation */
+.logo {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    animation: bounce 2s infinite ease-in-out, glow 1.5s infinite alternate, pulse 2s infinite;
 }
 
-.feature i {
-    font-size: 2.5rem;
-    color: #00e6ff;
-    margin-bottom: 15px;
-}
-
-.feature h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.feature p {
-    font-size: 1rem;
-    color: #eaeaea;
-}
-
-.feature:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 0 20px rgba(0, 230, 255, 0.3);
-}
-
-/* Call to Action */
+/* Call to Action Section */
 .call-to-action-section {
     background: linear-gradient(135deg, #12193e, #0a0f23);
     padding: 80px 0;
@@ -134,11 +118,53 @@ a {
     text-shadow: 0 0 10px rgba(0, 230, 255, 0.8);
 }
 
-.call-to-action-section .btn {
-    margin-top: 20px;
+/* Features Section */
+.features-section {
+    padding: 50px 0;
+    text-align: center;
 }
 
-/* Footer */
+.features-section h2 {
+    color: #f2f2f2;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-content: center;
+}
+
+.feature {
+    background-color: #222437;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.feature i {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #00c6ff;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.feature p {
+    color: #c9c9c9;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+}
+
+/* Footer Section */
 .footer-section {
     background: #0a0f23;
     padding: 50px 0;
@@ -208,100 +234,21 @@ a {
     color: #00e6ff;
 }
 
-/* Animations */
-@keyframes glow {
-    0% {
-        text-shadow: 0 0 10px rgba(0, 230, 255, 0.8), 0 0 20px rgba(0, 230, 255, 0.6);
-    }
-    100% {
-        text-shadow: 0 0 20px rgba(0, 230, 255, 0.8), 0 0 40px rgba(0, 230, 255, 0.6);
-    }
-}
-
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-5px);
-    }
-}
-.logo {
-    width: 150px; /* Adjust the size as needed */
-    height: auto;
-    display: block;
-    margin: 0 auto 20px; /* Center the logo and add space below it */
-}
-/* How It Works Section */
-.how-it-works-section {
-    background: #0a0f23;
-    padding: 80px 0;
+footer.footer-section {
+    background-color: #18191a;
+    padding: 30px 0;
     text-align: center;
 }
 
-.how-it-works-section h2 {
-    font-size: 2.5rem;
-    color: #00e6ff;
-    text-shadow: 0 0 10px rgba(0, 230, 255, 0.8);
-    margin-bottom: 50px;
+footer a {
+    color: #00c6ff;
 }
 
-.steps {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+footer a:hover {
+    text-decoration: underline;
 }
 
-.step {
-    flex: 1;
-    margin: 0 20px;
-    background: #12193e;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 230, 255, 0.2);
-    transition: transform 0.3s ease;
-}
-
-.step h3 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    color: #00e6ff;
-}
-
-.step p {
-    font-size: 1.1rem;
-    color: #eaeaea;
-}
-
-.step:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 0 20px rgba(0, 230, 255, 0.3);
-}
-/* Add animation to the logo */
-.logo {
-    width: 150px; /* Adjust the size as needed */
-    height: auto;
-    display: block;
-    margin: 0 auto 20px; /* Center the logo and add space below it */
-    animation: bounce 2s infinite ease-in-out, glow 1.5s infinite alternate;
-}
-
-/* Keyframes for glowing effect */
-@keyframes glow {
-    0% {
-        filter: drop-shadow(0 0 10px rgba(0, 230, 255, 0.6)) drop-shadow(0 0 20px rgba(0, 230, 255, 0.4));
-    }
-    100% {
-        filter: drop-shadow(0 0 20px rgba(0, 230, 255, 0.8)) drop-shadow(0 0 40px rgba(0, 230, 255, 0.6));
-    }
-}
-
-/* Keyframes for bounce effect */
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
+footer .social-links a {
+    font-size: 2rem;
+    margin: 0 10px;
 }
