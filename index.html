@@ -126,6 +126,69 @@
             <a href="https://dash.slimecrew.org" class="btn secondary">Go to Dashboard ⚙️</a>
         </div>
     </section>
+    <!-- Pokédex Section -->
+    <section class="pokedex-section">
+        <div class="container">
+            <h2>Pokédex 📖</h2>
+            <div class="pokedex-grid">
+                <!-- Example Pokémon entry -->
+                <div class="pokemon-entry">
+                    <img src="example-pokemon.webp" alt="Pikachu" class="pokemon-image">
+                    <h3>Pikachu ⚡</h3>
+                    <p>Type: Electric</p>
+                    <p>Pikachu is a mouse-like Pokémon known for its electrifying powers.</p>
+                </div>
+                
+                <!-- Add more Pokémon entries as needed -->
+                <div class="pokemon-entry">
+                    <img src="example-pokemon2.webp" alt="Charmander" class="pokemon-image">
+                    <h3>Charmander 🔥</h3>
+                    <p>Type: Fire</p>
+                    <p>Charmander is a fire-type Pokémon with a flame on its tail.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        /* Pokédex Section Styling */
+        .pokedex-section {
+            padding: 40px 0;
+            background-color: #f9f9f9;
+        }
+
+        .pokedex-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .pokemon-entry {
+            text-align: center;
+            margin: 20px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+            background-color: #fff;
+        }
+
+        .pokemon-image {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .pokemon-entry h3 {
+            margin-bottom: 5px;
+        }
+
+        .pokemon-entry p {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+    </style>
 
     <footer class="footer-section">
         <div class="container">
