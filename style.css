@@ -214,3 +214,68 @@ footer.footer-section a {
 footer.footer-section a:hover {
     text-shadow: 0 0 10px rgba(255, 0, 255, 0.9);
 }
+/* Pokédex Section Styles */
+.pokedex-section {
+    background-color: #f9f9f9; /* Light background to differentiate the section */
+    padding: 50px 0;
+}
+
+.pokedex-section .container {
+    text-align: center;
+}
+
+.pokedex-section h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.pokedex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemon {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.pokemon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.pokemon-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    background-color: #eee;
+}
+
+.pokemon h3 {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.pokemon p {
+    font-size: 16px;
+    color: #777;
+    margin: 5px 0;
+}
+
+.pokemon p:nth-child(3) {
+    font-weight: bold;
+    color: #333;
+}
+
