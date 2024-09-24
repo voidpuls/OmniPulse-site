@@ -34,7 +34,7 @@ a:hover {
 
 /* Hero Section */
 .hero-section {
-    background-image: url("https://www.example.com/cyberpunk-background.png"); 
+    background-image: url("https://img.freepik.com/free-vector/gradient-cyber-futuristic-background_23-2149117429.jpg"); 
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -109,7 +109,7 @@ a:hover {
 
 /* Call to Action Section */
 .call-to-action-section {
-    background: radial-gradient(circle, #00e0ff, #001f33);
+    background: radial-gradient(circle, #00e0ff, #0c3193);
     padding: 90px 0;
     text-align: center;
     color: #fff;
