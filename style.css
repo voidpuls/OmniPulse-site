@@ -109,7 +109,7 @@ a:hover {
 
 /* Call to Action Section */
 .call-to-action-section {
-    background: radial-gradient(circle, #00e0ff, #0c3193);
+    background: radial-gradient(circle, #0c3193, #00e0ff);
     padding: 90px 0;
     text-align: center;
     color: #fff;
