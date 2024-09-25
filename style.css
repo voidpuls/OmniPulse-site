@@ -41,8 +41,6 @@ a:hover {
     text-align: center;
     padding: 60px 0;
     position: relative;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
-    animation: gradient 10s ease infinite;
 }
 
 @keyframes gradient {
