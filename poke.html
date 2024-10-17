@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://www.chromethemer.com/wallpapers/chromebook-wallpapers/images/960/pokemon-chromebook-wallpaper.jpg');
+            background-size: cover;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+        img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .field {
+            border-bottom: 1px solid #fff;
+            margin: 10px 0;
+            padding: 10px 0;
+        }
+        #pokemon-info {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pokédex</h1>
+        <input type="text" id="pokemon-input" placeholder="Enter Pokémon name" />
+        <button id="fetch-button">Get Pokémon Info</button>
+        <div id="pokemon-info">
+            <h2 id="pokemon-name"></h2>
+            <img id="pokemon-sprite" src="" alt="" />
+            <div class="field"><strong>ID:</strong> <span id="pokemon-id"></span></div>
+            <div class="field"><strong>Species:</strong> <span id="pokemon-species"></span></div>
+            <div class="field"><strong>Type(s):</strong> <span id="pokemon-types"></span></div>
+            <div class="field"><strong>Height:</strong> <span id="pokemon-height"></span></div>
+            <div class="field"><strong>Weight:</strong> <span id="pokemon-weight"></span></div>
+            <div class="field"><strong>Description:</strong> <span id="pokemon-description"></span></div>
+        </div>
+        <p id="error-message" style="color: red;"></p>
+    </div>
+</body>
+</html>
